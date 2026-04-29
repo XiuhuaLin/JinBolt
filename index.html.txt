@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinBo Fasteners Co., Ltd. - Professional Fastener Manufacturer</title>
+    <style>
+        /* --- 基础样式重置 --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        
+        /* --- 通用工具类 --- */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .btn { display: inline-block; padding: 12px 30px; border-radius: 5px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-primary { background-color: #ff6b00; color: white; }
+        .btn-primary:hover { background-color: #e65c00; }
+        .btn-secondary { background-color: #2c3e50; color: white; }
+        .btn-secondary:hover { background-color: #1a252f; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 10px; color: #2c3e50; }
+        .section-subtitle { text-align: center; margin-bottom: 50px; color: #7f8c8d; }
+
+        /* --- 1. 头部导航 --- */
+        header { background-color: #2c3e50; color: white; padding: 20px 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        nav ul { display: flex; gap: 25px; }
+        nav a:hover { color: #ff6b00; }
+        .header-contact { display: flex; flex-direction: column; align-items: flex-end; font-size: 0.9rem; }
+        .header-contact span { color: #ff6b00; font-weight: bold; }
+
+        /* --- 2. 核心Banner区 --- */
+        .hero {
+            background-color: #e0e0e0; /* 占位背景色 */
+            /* 建议：将下面的url替换成你真实的工厂或产品场景图 */
+            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('your-hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .hero .btn { margin: 10px; }
+
+        /* --- 3. 产品分类区 --- */
+        .categories { padding: 80px 0; }
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .category-card { background: white; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; }
+        .category-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: #ff6b00; }
+        .category-card h3 { margin: 20px 0 10px; font-size: 1.4rem; color: #2c3e50; }
+
+        /* --- 4. 信任背书/优势区 --- */
+        .why-us { background-color: #2c3e50; color: white; padding: 80px 0; }
+        .why-us .section-title { color: white; }
+        .why-us .section-subtitle { color: #bdc3c7; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; text-align: center; }
+        .feature-item i { font-size: 3rem; color: #ff6b00; margin-bottom: 20px; display: block; }
+        .feature-item h3 { font-size: 1.5rem; margin-bottom: 15px; }
+
+        /* --- 5. 询盘转化区 --- */
+        .contact { padding: 80px 0; background-color: #f4f4f4; }
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact-info h2 { font-size: 2.5rem; margin-bottom: 20px; color: #2c3e50; }
+        .contact-info p { margin-bottom: 30px; }
+        .contact-form { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+        .form-group textarea { height: 120px; resize: none; }
+
+        /* --- 6. 页脚 --- */
+        footer { background-color: #1a252f; color: #7f8c8d; padding: 40px 0; text-align: center; }
+        footer p { font-size: 0.9rem; }
+
+        /* --- 移动端适配 --- */
+        @media (max-width: 768px) {
+            header .container { flex-direction: column; gap: 20px; }
+            nav ul { flex-wrap: wrap; justify-content: center; }
+            .hero { padding: 80px 0; }
+            .hero h1 { font-size: 2rem; }
+            .contact-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 头部导航 -->
+    <header>
+        <div class="container">
+            <div class="logo">⚙️ Precision Fasteners</div>
+            <nav>
+                <ul>
+                    <li><a href=" ">Home</a ></li>
+                    <li><a href="#products">Products</a ></li>
+                    <li><a href="#why-us">Why Us</a ></li>
+                    <li><a href="#contact">Contact</a ></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:+8618057769711">📞 +86 123 4567 89</a >
+                <span>Get a Quick Quote</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 核心 Banner 区 -->
+    <section class="hero">
+        <div class="container">
+            <h1>Good Quality Bolts in Wenzhou</h1>
+            <p>Your trusted partner for DIN, ANSI, and ISO standard fasteners. 10+ years of experience serving the automotive and construction sectors.</p >
+            <a href="#products" class="btn btn-primary">View Products</a >
+            <a href="#contact" class="btn btn-secondary">Get a Quote</a >
+        </div>
+    </section>
+
+    <!-- 3. 产品分类区 -->
+    <section id="products" class="categories">
+        <div class="container">
+            <h2 class="section-title">Our Main Products</h2>
+            <p class="section-subtitle">Manufactured with precision, meeting international standards.</p >
+            <div class="category-grid">
+                <!-- 产品类别 1 -->
+                <a href="#" class="category-card">
+                    <h3>🔩 Bolts & Screws</h3>
+                    <p>Hex bolts, socket screws, and custom parts.</p >
+                </a >
+                <!-- 产品类别 2 -->
+                <a href="#" class="category-card">
+                    <h3>⚙️ Nuts & Washers</h3>
+                    <p>Hex nuts, lock nuts, flat and spring washers.</p >
+                </a >
+                <!-- 产品类别 3 -->
+                <a href="#" class="category-card">
+                    <h3>🔧 Threaded Rods</h3>
+                    <p>Fully threaded rods and stud bolts (DIN 975/976).</p >
+                </a >
+                <!-- 产品类别 4 -->
+                <a href="#" class="category-card">
+                    <h3>🏗️ Anchors & Rivets</h3>
+                    <p>Chemical anchors, sleeve anchors, and blind rivets.</p >
+                </a >
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 信任背书/优势区 -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <p class="section-subtitle">We provide more than just fasteners; we provide reliability.</p >
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i>📜</i>
+                    <h3>ISO 9001 Certified</h3>
+                    <p>Strict quality control from raw material to final inspection.</p >
+                </div>
+                <div class="feature-item">
+                    <i>🌍</i>
+                    <h3>Global Standards</h3>
+                    <p>Expertise in DIN, ANSI, JIS, and GB standards.</p >
+                </div>
+                <div class="feature-item">
+                    <i>🏭</i>
+                    <h3>Factory Direct</h3>
+                    <p>Competitive pricing with large stock availability.</p >
+                </div>
+            </div>
+        </div>=    </section>=
+    <!-- 5. 询盘转化区 -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Request Your Free Quote</h2>
+                <p>Send us your drawing or specifications. We will get back to you within 2 hours with a detailed solution.</p >
+                <ul>
+                    <li><strong>Email:</strong> FerenczMilasi@gmail.com</li>
+                    <li><strong>WhatsApp:</strong> +86 18057769711</li>
+                    <li><strong>Address:</strong> No. 88, Industrial Zone, Wenzhou, China</li>
+                </ul>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Product Name / Standard (e.g., M12 Hex Bolt DIN 933)" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us your requirements (Quantity, Material, Surface Treatment...)"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 6. 页脚 --- -->
+    <footer>
+        <div class="container">
+            <p>© 2024 JinBo Fasteners Co., Ltd. All Rights Reserved.</p >
+        </div>
+    </footer>
+
+</body>
+</html>
